@@ -101,28 +101,35 @@
                         <p class="title">Main Header</p>
                         <div class="preview">
                             <h1>This is a sample Main Header</h1>
-                            <p class="description"></p>
+                            <p class="description">Nunito bold 36px</p>
                         </div>
                     </li>
                     <li>
                         <p class="title">Sub Header</p>
                         <div class="preview">
-                            <p class="sub">This is a sample Sub Header</p>
-                            <p class="description"></p>
+                            <p class="subheader">This is a sample Sub Header</p>
+                            <p class="description">Nunito italic 28px, #9c9c9c</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title">Section Title</p>
+                        <div class="preview">
+                            <h2>This is a sample Small Title</h2>
+                            <p class="description">Nunito bold 30px, #40A3FF</p>
                         </div>
                     </li>
                     <li>
                         <p class="title">Small Title</p>
                         <div class="preview">
-                            <h2>This is a sample Small Title</h2>
-                            <p class="description"></p>
+                            <h3>This is a sample Small Title</h3>
+                            <p class="description">Nunito bold 24px</p>
                         </div>
                     </li>
                     <li>
                         <p class="title">Paragraph</p>
                         <div class="preview">
                             <p>This sample paragraph is taken from <a href="http://cheeseburgeripsum.com/" rel="noopener" target="_blank">Cheeseburger Ipsum</a>: The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour amplifying condiments. Why are you still reading this- go get a cheeseburger.</p>
-                            <p class="description"></p>
+                            <p class="description">Nunito 16px, #3A3A3A</p>
                         </div>
                     </li>
                     <li>
@@ -167,19 +174,19 @@
                 <ul class="components">
                     <li>
                         <button class="btn">Normal Button</button>
-                        <p class="description"></p>
+                        <p class="description">#FFA340 background, #FFF text, 10px padding top-bottom, 15px padding left-right, 16px font</p>
                     </li>
                     <li>
                         <button class="btn" disabled>Disabled Button</button>
-                        <p class="description"></p>
+                        <p class="description">#CFCFCF background, #FFF text</p>
                     </li>
                     <li>
                         <button class="btn btn-sm">Small Button</button>
-                        <p class="description"></p>
+                        <p class="description">12px font</p>
                     </li>
                     <li>
                         <button class="btn btn-lg">Large Button</button>
-                        <p class="description"></p>
+                        <p class="description">15px padding top-bottom, 30px padding left-right</p>
                     </li>
                 </ul>
                     <p class="description">Note: all buttons should have a normal, hovered, and focused state.</p>
@@ -321,6 +328,13 @@
                 $("nav a").removeClass("active");
                 $(this).addClass("active");
                 gotoAnchor($(this).attr("href").substring(1));
+            })
+
+            $(".tabs li").click(function(e){
+                if($(this).hasClass("active")) return;
+
+                $(".tabs li").removeClass("active");
+                $(this).addClass("active");
             })
 		</script>
 	</body>
