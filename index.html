@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RGBase | Web Style Guide</title>
+		
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" item-content="IE=edge,chrome=1">
+        <meta name="description" item-content="Front-end style guide for website development at Rolling Glory (http://rollingglory.com)">
+        <meta name="keywords" content="front-end style guide, style guide, pattern library, web development">
+		
+		<!--remove if not responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+		<!--facebook meta properties-->
+		<meta property="og:image" content="" />
+		<meta property="og:title" content="Rolling Glory Front-End Style Guide"/>
+		<meta property="og:url" content="http://rollingglory.com/style-guide"/>
+		<meta property="og:site_name" content="Rolling Glory Front-End Style Guide"/>
+		<meta property="og:description" content="Front-end style guide for website development at Rolling Glory (http://rollingglory.com)">
+
+		<link rel="shortcut icon" href="img/rgb-favicon.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type='text/css'>
+		
+	</head>
+	<body>
+		<!--remove if this supports IE7 and below-->
+		<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+            <h1><img src="img/logo.png" alt="Rolling Glory" width="40px" /> RGBase &middot; Web Style Guide</h1>
+        </header>
+
+        <nav>
+            <h1><img src="img/logo.png" alt="Rolling Glory" width="30px" /> RGBase</h1>
+            <a class="active" href="#colors">Colors</a>
+            <a href="#typography">Typography</a>
+            <a href="#buttons">Buttons</a>
+            <a href="#form-elements">Form Elements</a>
+            <a href="#nav-elements">Navigation Elements</a>
+        </nav>
+
+        <main>
+        	<section name="colors">
+                <a name="colors"></a>
+                <h2>Colors</h2>
+
+                <h3>Accent Colors</h3>
+                <ul class="components list-inline">
+                    <li>
+                        <div class="color-preview brand"></div>
+                        <p class="title">Primary/Brand Color</p>
+                        <p class="description">#40A3FF</p>
+                    </li>
+                    <li>
+                        <div class="color-preview accent"></div>
+                        <p class="title">Accent Color</p>
+                        <p class="description">#FFA340</p>
+                    </li>
+                    <li>
+                        <div class="color-preview accent2"></div>
+                        <p class="title">Secondary Accent Color</p>
+                        <p class="description">#A340FF</p>
+                    </li>
+                </ul>
+
+                <h3>Text Colors</h3>
+                <ul class="components list-inline">
+                    <li>
+                        <div class="color-preview text"></div>
+                        <p class="title">Primary Text Color</p>
+                        <p class="description">#3A3A3A</p>
+                    </li>
+                    <li>
+                        <div class="color-preview text2"></div>
+                        <p class="title">Secondary Text Color</p>
+                        <p class="description">#9C9C9C</p>
+                    </li>
+                    <li>
+                        <div class="color-preview error"></div>
+                        <p class="title">Error Message Color</p>
+                        <p class="description">#A94442</p>
+                    </li>
+                    <li>
+                        <div class="color-preview success"></div>
+                        <p class="title">Success Message Color</p>
+                        <p class="description">#42A944</p>
+                    </li>
+                </ul>
+        	</section>
+
+        	<section name="typography">
+                <a name="typography"></a>
+                <h2>Typography</h2>
+
+                <ul class="components">
+                    <li>
+                        <p class="title">Main Header</p>
+                        <div class="preview">
+                            <h1>This is a sample Main Header</h1>
+                            <p class="description"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title">Sub Header</p>
+                        <div class="preview">
+                            <p class="sub">This is a sample Sub Header</p>
+                            <p class="description"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title">Small Title</p>
+                        <div class="preview">
+                            <h2>This is a sample Small Title</h2>
+                            <p class="description"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title">Paragraph</p>
+                        <div class="preview">
+                            <p>This sample paragraph is taken from <a href="http://cheeseburgeripsum.com/" rel="noopener" target="_blank">Cheeseburger Ipsum</a>: The last time you had a cheeseburger was too long ago. Try not to drool when you think about the slightly charred, medium-rare meat nestled between soft brioche, cradled in crisp iceberg lettuce and flavour amplifying condiments. Why are you still reading this- go get a cheeseburger.</p>
+                            <p class="description"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="title">Links</p>
+                        <div class="preview">
+                            <ul class="components list-inline">
+                                <li>
+                                    <a href="rollingglory.com" rel="noopener" target="_blank">Sample Link</a>
+                                    <p class="description">
+                                        Underlined, #40A3FF
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="rollingglory.com" rel="noopener" target="_blank" class="hovered">Hovered Link</a>
+                                    <p class="description">
+                                        Underlined, #D97000
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="rollingglory.com" rel="noopener" target="_blank" class="focused">Focused Link</a>
+                                    <p class="description">
+                                        Outlined,
+                                        Underlined, #40A3FF
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="rollingglory.com" rel="noopener" target="_blank" class="visited">Visited Link</a>
+                                    <p class="description">
+                                        Underlined, #A340FF
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="description">Note: all links should have a normal, hovered, visited, and focused state.</p>
+                        </div>
+                    </li>
+                </ul>
+        	</section>
+
+        	<section name="buttons">
+                <a name="buttons"></a>
+                <h2>Buttons</h2>
+                <ul class="components">
+                    <li>
+                        <button class="btn">Normal Button</button>
+                        <p class="description"></p>
+                    </li>
+                    <li>
+                        <button class="btn" disabled>Disabled Button</button>
+                        <p class="description"></p>
+                    </li>
+                    <li>
+                        <button class="btn btn-sm">Small Button</button>
+                        <p class="description"></p>
+                    </li>
+                    <li>
+                        <button class="btn btn-lg">Large Button</button>
+                        <p class="description"></p>
+                    </li>
+                </ul>
+                    <p class="description">Note: all buttons should have a normal, hovered, and focused state.</p>
+        	</section>
+
+        	<section name="form elements">
+                <a name="form-elements"></a>
+                <h2>Form Elements</h2>
+                <form class="form">
+                    <ul class="components">
+                        <li class="form-group">
+                            <p class="title">Text Input</p>
+                            <div class="preview">
+                                <label>Field Title</label>
+                                <input type="text" />
+                            </div>
+                            <p class="description"></p>
+                        </li>
+                        <li class="form-group">
+                            <p class="title">Text Input with Success Message</p>
+                            <div class="preview">
+                                <label>Field Title</label>
+                                <input type="text" />
+                                <span class="success-message">Sample success message</span>
+                            </div>
+                            <p class="description"></p>
+                        </li>
+                        <li class="form-group">
+                            <p class="title">Text Input with Error</p>
+                            <div class="preview">
+                                <label>Field Title</label>
+                                <input type="text" />
+                                <span class="error-message">Sample error message</span>
+                            </div>
+                            <p class="description"></p>
+                        </li>
+                        <li class="form-group">
+                            <p class="title">Dropdown</p>
+                            <div class="preview">
+                                <label>Field Title</label>
+                                <select>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <p class="description"></p>
+                        </li>
+                        <li class="form-group">
+                            <p class="title">Text Area</p>
+                            <div class="preview">
+                                <label>Field Title</label>
+                                <textarea></textarea>
+                            </div>
+                            <p class="description"></p>
+                        </li>
+                        <li class="form-group">
+                            <p class="title">Checkbox</p>
+                            <div class="preview">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="sampleCheckbox" /><span></span> Checkbox 1
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="description"></p>
+                        </div>
+                        <li class="form-group">
+                            <p class="title">Radio Button</p>
+                            <div class="preview">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="sampleRadio" /><span></span> Radio 1
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="sampleRadio" /><span></span> Radio 2
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="description"></p>
+                        </li>
+                    </ul>
+                </form>
+        	</section>
+
+        	<section name="navigation elements">
+                <a name="nav-elements"></a>
+                <h2>Navigation Elements</h2>
+                <ul class="components">
+                    <li>
+                        <p class="title">Breadcrumb</p>
+                        <div class="preview">
+                            <ul class="breadcrumb">
+                                <li><a href="#">Root Page</a></li>
+                                <li><a href="#">Prev Page</a></li>
+                                <li>Current Page</li>
+                            </ul>
+                        </div>
+                        <p class="description"></p>
+                    </li>
+                    <li>
+                        <p class="title">Tabs</p>
+                        <div class="preview">
+                            <ul class="tabs">
+                                <li class="active">Tab 1</li>
+                                <li>Tab 2</li>
+                                <li>Tab 3</li>
+                            </ul>
+                        </div>
+                        <p class="description"></p>
+                    </li>
+                    <li>
+                        <p class="title">Pagination</p>
+                        <div class="preview">
+                            <ul class="pagination">
+                                <li><a class="prev disabled" href="#"><i class="fa fa-angle-left"></i></a></li>
+                                <li><a class="active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a class="next" href="#"><i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <p class="description"></p>
+                    </li>
+                </ul>
+        	</section>
+        </main>
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script>
+            function gotoAnchor(name){
+                $("html").animate({"scrollTop":$("a[name='"+name+"']").offset().top},500);
+            }
+
+            $("nav a").click(function(e){
+                e.preventDefault();
+                $("nav a").removeClass("active");
+                $(this).addClass("active");
+                gotoAnchor($(this).attr("href").substring(1));
+            })
+		</script>
+	</body>
+</html>
