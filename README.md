@@ -9,6 +9,7 @@ This site is a component library that will be modified according to element coll
 
 ## File Structure
 We use [LESS](lesscss.org) for styling. This boilerplate consists of four .less files:
+- `references.less` declares classes that used as reference in every less file whenever needed. Note : This references must be clean and should not be compiled and added to CSS.
 - `variables.less` declares static variables that are used throughout the site. Examples include colors, font families, and gap size.
 - `utilities.less` declares classes that are commonly needed, such as unstyled list and clearfix.
 - `components.less` is the core of this boilerplate. It declares classes for components such as forms, buttons, and tabs.
