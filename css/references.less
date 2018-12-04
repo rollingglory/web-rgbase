@@ -1,0 +1,100 @@
+// Please import this references file as reference. This references should not be compiled and added to CSS.
+// NOTE : Don't add any class, attribute or id that used and need to be compiled to here.
+
+// Media query vars => how to use : @media @media-smartphone { ... }
+@media-smartphone: ~"only screen and (max-width: 767px)";
+@media-smartphone-medium: ~"only screen and (max-width: 480px)";
+@media-smartphone-small: ~"only screen and (max-width: 375px)";
+@media-tablet: ~"only screen and (min-width: 768px) and (max-width: 991px)";
+@media-laptop-small: ~"only screen and (min-width: 992px)";
+@media-laptop-large: ~"only screen and (min-width: 1200px)";
+
+// ----- General Helpers
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
+
+.scale(@ratio: 1.5) {
+  .transform(scale(@ratio));
+}
+
+.transition(@duration: 0.2s, @target:all, @ease:ease-out) {
+  -webkit-transition: @target @duration @ease;
+  -moz-transition: @target @duration @ease;
+  -o-transition: @target @duration @ease;
+  transition: @target @duration @ease;
+}
+
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.rounded(@radius: 2px) {
+  -khtml-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.greyscale(@grey_range: 1) {
+  -webkit-filter: grayscale(@grey_range);
+  -moz-filter: grayscale(@grey_range);
+  -o-filter: grayscale(@grey_range);
+  -ms-filter: grayscale(@grey_range);
+  filter: grayscale(@grey_range);
+}
+
+.blur(@blur_radius: 5px) {
+  -webkit-filter: blur(@blur_radius);
+  -moz-filter: blur(@blur_radius);
+  -o-filter: blur(@blur_radius);
+  -ms-filter: blur(@blur_radius);
+  filter: blur(@blur_radius);
+}
+// ----- end of General Helpers
+
+// Helpers : change placeholder color of input
+.placeholder-color(@color: #666) {
+  ::-webkit-input-placeholder { color: @color; }
+  ::-moz-placeholder { color: @color; }
+  :-ms-input-placeholder { color: @color; }
+  :-moz-placeholder { color: @color; }
+}
+
+// Helpers : handling max row in one paragraph, default is 2 rows.
+.clamp(@lines: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @lines;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+}
+
+// Helpers : handling long URL or words
+.dont-break-out {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+// Helpers : handling display flex in every browser
+.display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
