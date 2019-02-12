@@ -1,3 +1,7 @@
+// Please import this references file as reference in any file. This references should not be compiled and added to CSS.
+// NOTE : Don't add any class, attribute or id that used and need to be compiled to here.
+// How to use : @import (reference) "variables.less";
+
 @HEADER: #415E73;
 @WHITE: #FFF;
 
@@ -17,3 +21,11 @@
 @FONT: "Nunito", "Ubuntu", "Lato", "Arial", "Helvetica", sans-serif;
 
 @GAP: 15px;
+
+// Media query vars => how to use : @media @media-smartphone { ... }
+@media-smartphone: ~"only screen and (max-width: 767px)";
+@media-smartphone-medium: ~"only screen and (max-width: 480px)";
+@media-smartphone-small: ~"only screen and (max-width: 375px)";
+@media-tablet: ~"only screen and (min-width: 768px) and (max-width: 991px)";
+@media-laptop-small: ~"only screen and (min-width: 992px)";
+@media-laptop-large: ~"only screen and (min-width: 1200px)";
